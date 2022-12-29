@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const App = () => {
+  const [nums, setNums] = useState(0);
+
+  useEffect(() => {
+    // alert("Hello Tarun");
+    document.title = `You clicked ${nums} times`;
+  });
+
   return (
     <>
-      <h1>Hello Tarun</h1>
+      <button
+        onClick={() => {
+          setNums(nums + 1);
+        }}
+      >
+        Click me {nums}
+      </button>
     </>
   );
 };
