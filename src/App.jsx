@@ -5,7 +5,7 @@ const App = () => {
 
   useEffect(() => {
     // alert("Hello Tarun");
-    document.title = `You clicked ${nums} times`;
+    document.title = `You clicked ${nums} times`; // for dynamic title
   });
 
   return (
